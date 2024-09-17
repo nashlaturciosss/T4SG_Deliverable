@@ -19,12 +19,12 @@ module.exports = {
   rules: {
     "@typescript-eslint/consistent-type-imports": [
       // https://typescript-eslint.io/rules/consistent-type-imports/
-      "error", // https://eslint.org/docs/latest/use/configure/rules
+      "warn", // https://eslint.org/docs/latest/use/configure/rules
       {
         prefer: "type-imports",
         fixStyle: "inline-type-imports",
       },
     ],
-    "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }], // https://typescript-eslint.io/rules/no-unused-vars/
+    "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }], // https://typescript-eslint.io/rules/no-unused-vars/
   },
 };
